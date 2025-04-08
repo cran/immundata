@@ -1,0 +1,25 @@
+Package: immundata
+Title: A Unified Data Layer for Single-Cell, Spatial and Bulk
+        Immunomics
+Version: 0.0.1
+Authors@R: 
+    person("Vadim I.", "Nazarov", , "support@immunomind.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3659-2709"))
+Description: Provides a unified data layer for single-cell, spatial and bulk
+ T-cell and B-cell immune receptor repertoire data, integrating diverse 
+ data formats such as AIRR and raw sequencing files. Includes utilities for 
+ receptor aggregation, metadata normalization, and clonotype filtering.
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: cli, R6, checkmate, dplyr, duckplyr, glue, lifecycle, readr,
+        rlang
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-04-07 23:22:15 UTC; vdn
+Author: Vadim I. Nazarov [aut, cre] (<https://orcid.org/0000-0003-3659-2709>)
+Maintainer: Vadim I. Nazarov <support@immunomind.com>
+Repository: CRAN
+Date/Publication: 2025-04-08 15:40:07 UTC
