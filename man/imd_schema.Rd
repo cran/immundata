@@ -2,15 +2,44 @@
 % Please edit documentation in R/globals.R
 \name{imd_schema}
 \alias{imd_schema}
-\title{Get Immundata Internal Schema Field Names}
+\alias{imd_schema_sym}
+\alias{imd_meta_schema}
+\alias{imd_files}
+\alias{imd_rename_cols}
+\alias{imd_drop_cols}
+\alias{imd_repertoire_schema}
+\alias{imd_receptor_features}
+\alias{imd_receptor_chains}
+\title{Get Immundata internal schema field names}
 \usage{
-imd_schema()
+imd_schema(key = NULL)
+
+imd_schema_sym(key = NULL)
+
+imd_meta_schema()
+
+imd_files()
+
+imd_rename_cols(format = "default")
+
+imd_drop_cols(format = "airr")
+
+imd_repertoire_schema(format = "airr")
+
+imd_receptor_features(schema)
+
+imd_receptor_chains(schema)
 }
-\value{
-A named list of schema field names.
+\arguments{
+\item{key}{Character which field to return.}
+
+\item{format}{Character what format to load - "airr" or "10x".}
+
+\item{schema}{Receptor schema from \code{\link[=make_receptor_schema]{make_receptor_schema()}}.}
 }
 \description{
 Returns the standardized field names used across Immundata objects and processing functions,
-as defined in \code{IMD_GLOBALS$schema}. These include column names for barcodes, receptors,
+as defined in \code{IMD_GLOBALS$schema}. These include column names for cell ids or barcodes, receptors,
 repertoires, and related metadata.
 }
+\concept{schema}

@@ -5,7 +5,7 @@
 \alias{IMD_GLOBALS}
 \title{Internal Immundata Global Configuration}
 \format{
-An object of class \code{list} of length 3.
+An object of class \code{list} of length 6.
 }
 \usage{
 IMD_GLOBALS
@@ -21,7 +21,7 @@ field names, default file names, and internal error messages.
 \item \code{messages}: Named list of default messages and error texts (e.g., \code{"NotImpl"}).
 \item \code{schema}: Standardized column names for internal schema usage. These include:
 \itemize{
-\item \code{barcode}: Column name for cell barcode IDs.
+\item \code{cell}: Column name for cell barcode IDs.
 \item \code{receptor}: Column name for receptor unique identifiers.
 \item \code{repertoire}: Column name for repertoire group IDs.
 \item \code{metadata_filename}: Column name for metadata files (internal).
